@@ -27,25 +27,24 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(5),
+    height: '100%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+
   },
-  appheader: {
-    backgroundColor: '#f1bc0a'
-  },
+
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(3),
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: '#ffffff'
   },
   large: {
     marginTop: theme.spacing(1),
@@ -53,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(15),
   },
   Button: {
-    width: '100%',
+    width: '55%',
   }
 }));
 
@@ -63,10 +62,9 @@ const useStyles = makeStyles((theme) => ({
 function App() {
 const classes = useStyles();
   return (
-   <Container component="main" maxWidth="xs" className={classes.appheader}>
+   <Container component="main" maxWidth="xs" >
       <CssBaseline />
       <div className={classes.paper}>
-
           <img src={logo} className={classes.large} alt="logo" />
 
         <Typography component="h1" variant="h5">
