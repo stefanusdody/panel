@@ -10,6 +10,7 @@ import logo from './favicon.ico';
 import tokopedia from './tokopedialogo.jpg';
 import whatsapp from './whatsapplogo.jpg';
 import tokotukuada from './tokotukuadalogo.jpg';
+import promo from './promo.jpg';
 import './App.css';
 
 function Copyright() {
@@ -53,6 +54,9 @@ const useStyles = makeStyles((theme) => ({
   },
   Button: {
     width: '55%',
+  },
+  Promo: {
+    width: '100%',
   }
 }));
 
@@ -102,7 +106,10 @@ const classes = useStyles();
             <img src={tokopedia} className={classes.Button}alt="logo" />
           </Button>
         </form>
+
       </div>
+      <br/>
+      <img src={promo} className={classes.Promo}alt="logo" />
       <Box mt={8}>
         <Copyright />
       </Box>
